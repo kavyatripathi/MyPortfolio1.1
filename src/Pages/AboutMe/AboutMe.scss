@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+.Background{
+    padding-top: 90px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(245,245,245,0) 0%,rgba(245,245,245,0) 30%,#ffffff 30%,#ffffff 50%,#1e1e2c 50%,#1e1e2c 100%),url('../../UI/pattern-01.svg');
+    position: absolute;
+    justify-content: center;
+    
+    .Centre{
+   
+        margin-top: 70px;
+        padding: 250px 550px;
+        background: linear-gradient(to right,  #ffffff 0%,#ffffff 47%,#2D2D44 47%,#2D2D44 100%);
+        box-shadow: 0px 3px 6px rgb(50, 50, 66);
+        height: 10%;
+        width: 16%;
+        position: relative;
+        h1{
+            position: absolute;
+            color: #ffffff;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            margin-left: 300px;
+            margin-top: -100px;
+            
+        }
+        h3{
+            text-align: left;
+            position: absolute;
+            display: inline;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: lighter;
+            font-size: 25px;
+            width: 500px;
+            margin-top: 20px;
+            margin-left: 150px;    
+        }
+    }
+}
+
+
+
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    font-size: 50px;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+@media (max-width: 1600px){
+    .Background{
+        padding-top: 90px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right,  #ffffff 0%,#ffffff 58%,#1E1E2C 58%,#1E1E2C 100%);
+        z-index: -1;
+        justify-content: center;
+        position: fixed;
+    }
+}
+  
+
+@media (max-width: 500px){
+    .Background{
+        padding-top: 90px;
+        display: flex;
+        width: 400px;
+        height: 800px;
+        background: linear-gradient(#ffffff 0%,#ffffff 40%,#1E1E2C 40%,#1E1E2C 100%);
+        background-size: cover;
+        z-index: -1;
+        justify-content: center;
+        position: relative;
+    }
+    .Centre{
+   
+        margin-top: 50px;
+        
+        background: linear-gradient(#ffffff 0%,#ffffff 55%,#2D2D44 55%,#2D2D44 100%);
+        box-shadow: 0px 3px 6px rgb(50, 50, 66);
+        height: 500px;
+        width: 250px;
+        z-index: 1;
+        position: absolute;
+    
+    }
+}

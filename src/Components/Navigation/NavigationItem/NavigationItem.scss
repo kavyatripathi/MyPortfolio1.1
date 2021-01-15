@@ -1,0 +1,31 @@
+.NavigationItem {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.NavigationItem a {
+
+    font-family: 'Montserrat',sans-serif;
+    font-size: 25px;
+    background-color: #ffffff;
+    color:  #504f4f;
+    text-decoration: none;
+    height: 100%;
+    padding: 20px 50px 0px 50px;
+    border-bottom: 4px solid transparent;
+    box-sizing: border-box;
+    display: block;
+    border-bottom: none;
+    
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active{
+    background-color: #ffffff;
+    color: #000000;
+    border-bottom: 2px solid #5f5f5f;
+}
