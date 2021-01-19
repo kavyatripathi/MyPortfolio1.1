@@ -1,0 +1,48 @@
+$grid__bp-md: 1440;
+.heading{
+  position: absolute;
+  width: 50px;
+  margin-top: 5%;
+  padding-top: 1%;
+  padding-left: 0.5%;
+  color: black;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 45px;
+  box-sizing: border-box;
+  border-left: 20px solid #32DFEB;
+  float: left;
+  
+}
+
+.container {
+  max-width: $grid__bp-md * 1px;
+  margin: 10% auto;
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+  &__row {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+//Styling of grid for demostration purposes
+.container {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.row-element {
+  width: 650px;
+  height: 218px;
+  border: 5px solid #10C8E0;
+  border-radius: 20px;
+  margin: 20px auto 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
