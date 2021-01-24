@@ -4,7 +4,7 @@ import "./Work.scss";
 const work = () => {
     return (
         <div>
-            <h1 className="heading">SKILLS</h1>
+            <h1 className="heading">WORK</h1>
             <div className="container">
             <div className="container__row">
                 <div className="row-element">
